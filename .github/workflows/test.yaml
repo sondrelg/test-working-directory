@@ -1,0 +1,11 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    name: Test whether working directory can be set outside workflow or not
+    runs-on: ubuntu-latest
+    steps:
+      - run: ls
